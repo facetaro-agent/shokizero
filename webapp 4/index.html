@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ショキゼロ｜初期費用0円の営業職採用代行サービス</title>
+  <meta name="description" content="営業職採用に特化した月額定額制の採用代行サービス「ショキゼロ」。初期費用0円・初月3万円から始められる。求人媒体営業カテゴリのアルゴリズムを武器に中小・ベンチャー企業の採用を支援。" />
+  <!-- OGP -->
+  <meta property="og:title" content="ショキゼロ｜初期費用0円の営業職採用代行" />
+  <meta property="og:description" content="求人媒体営業カテゴリ特化。初期費用0円・初月3万円から始める営業職採用代行サービス。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/1A5FBF/FFFFFF?text=ショキゼロ" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1458706989077421');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1458706989077421&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   { DEFAULT: '#1A5FBF', light: '#2D7DD2', dark: '#134A99' },
+            accent:    { DEFAULT: '#F97316', light: '#FB923C', dark: '#EA6A0A' },
+            yellow:    { DEFAULT: '#FACC15', light: '#FDE68A' },
+            navy:      { DEFAULT: '#0F2A5E' },
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+  <!-- ========================================
+       NAVIGATION
+  ======================================== -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#hero" class="flex items-center gap-2 group">
+        <span class="text-primary font-black text-2xl tracking-tight">ショキ<span class="text-accent">ゼロ</span></span>
+        <span class="hidden sm:block text-xs text-gray-500 font-medium leading-tight">初期費用0円の<br>営業職採用代行</span>
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+        <li><a href="#problem"  class="hover:text-primary transition-colors">課題</a></li>
+        <li><a href="#service"  class="hover:text-primary transition-colors">サービス</a></li>
+        <li><a href="#strengths" class="hover:text-primary transition-colors">3つの強み</a></li>
+        <li><a href="#pricing"  class="hover:text-primary transition-colors">料金</a></li>
+        <li><a href="#flow"     class="hover:text-primary transition-colors">導入の流れ</a></li>
+      </ul>
+      <a href="#contact" class="btn-accent hidden sm:inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full shadow-lg">
+        <i class="fa-solid fa-envelope"></i> 無料相談する
+      </a>
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="メニュー">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pb-4">
+      <ul class="flex flex-col gap-3 pt-3 text-sm font-medium text-gray-700">
+        <li><a href="#problem"   class="block py-2 hover:text-primary" onclick="closeMobileMenu()">課題</a></li>
+        <li><a href="#service"   class="block py-2 hover:text-primary" onclick="closeMobileMenu()">サービス</a></li>
+        <li><a href="#strengths" class="block py-2 hover:text-primary" onclick="closeMobileMenu()">3つの強み</a></li>
+        <li><a href="#pricing"   class="block py-2 hover:text-primary" onclick="closeMobileMenu()">料金</a></li>
+        <li><a href="#flow"      class="block py-2 hover:text-primary" onclick="closeMobileMenu()">導入の流れ</a></li>
+        <li><a href="#contact"   class="btn-accent block text-center py-3 rounded-xl font-bold mt-2" onclick="closeMobileMenu()">無料相談する</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- ========================================
+       HERO SECTION
+  ======================================== -->
+  <section id="hero" class="relative min-h-screen flex items-center pt-16 hero-bg overflow-hidden" style="min-height:100vh;min-height:100dvh;">
+    <div class="absolute inset-0 hero-gradient"></div>
+    <div class="absolute top-0 right-0 w-1/2 h-full hero-pattern opacity-10"></div>
+
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 w-full">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 text-white relative z-30">
+          <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 mb-6 text-sm font-bold shadow-inner">
+            <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+            初期費用0円・最短即日スタート
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+            営業職採用を、<br>
+            <span class="text-yellow">もっと自由に、</span><br>
+            確実に。
+          </h1>
+
+          <p class="text-lg sm:text-xl text-blue-100 leading-relaxed mb-8 max-w-2xl">
+            貴社がやることは、届いた候補者から<strong class="text-white">『選ぶだけ』</strong>。<br class="hidden sm:block">
+            採用業務の9割を、私たちの専門チームが引き受けます。
+          </p>
+
+          <!-- Hero Price Badges - fixed layout -->
+          <div class="hero-price-strip mb-10">
+            <div class="hero-price-item">
+              <div class="hero-price-label">初期費用</div>
+              <div class="hero-price-value hero-price-large">¥0</div>
+            </div>
+            <div class="hero-price-divider"></div>
+            <div class="hero-price-item">
+              <div class="hero-price-label">初月費用</div>
+              <div class="hero-price-value hero-price-large">3<span class="hero-price-unit">万円</span></div>
+            </div>
+            <div class="hero-price-divider"></div>
+            <div class="hero-price-item">
+              <div class="hero-price-label">スタート</div>
+              <div class="hero-price-value">最短即日</div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="btn-accent inline-flex items-center gap-2 px-10 py-5 rounded-full text-lg font-bold shadow-2xl hover:scale-105 transition-transform duration-300">
+              <i class="fa-solid fa-envelope"></i>
+              無料相談してみる
+            </a>
+            <a href="#service" class="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 border border-white/40 text-white px-10 py-5 rounded-full text-lg font-bold transition-colors">
+              <i class="fa-solid fa-circle-play"></i>
+              サービスを見る
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Image Area -->
+    <div class="hero-person-wrapper" id="hero-person">
+      <img src="img/rikakoookawa.png" alt="ショキゼロ コンシェルジュ" class="hero-person-img" />
+      <!-- 応募数バッジ -->
+      <div class="hero-badge hero-badge-apply" id="hero-badge-apply">
+        <i class="fa-solid fa-chart-line text-primary text-2xl mb-1"></i>
+        <div class="text-xs font-bold text-gray-700">応募数</div>
+        <div class="text-2xl font-black text-primary">3.2<span class="text-sm font-medium">倍</span><span class="text-xs font-normal text-gray-500 ml-1">向上</span></div>
+      </div>
+      <!-- 内定承諾率バッジ -->
+      <div class="hero-badge hero-badge-accept" id="hero-badge-accept">
+        <i class="fa-solid fa-user-check text-green-500 text-2xl mb-1"></i>
+        <div class="text-xs font-bold text-gray-700">内定承諾率</div>
+        <div class="text-2xl font-black text-green-600">↑ UP</div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/60 text-xs z-30">
+      <span>SCROLL</span>
+      <i class="fa-solid fa-chevron-down animate-bounce"></i>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       PROBLEM SECTION
+  ======================================== -->
+  <section id="problem" class="py-10 lg:py-14 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <span class="section-label text-primary">PROBLEM</span>
+        <h2 class="section-title mt-3">こんなお悩み、ありませんか？</h2>
+        <p class="section-subtitle">中小・ベンチャー企業の採用担当者が抱える"よくある課題"</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+
+        <div class="problem-card">
+          <div class="problem-icon bg-red-50">
+            <i class="fa-solid fa-clock text-red-500 text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">"本業が忙しくて採用まで手が回らない…"</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">社長・幹部が営業やマネジメントで手一杯。採用したい気持ちはあるが、後回しになってしまう。</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-icon bg-blue-50">
+            <i class="fa-solid fa-user-xmark text-blue-500 text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">"応募後に連絡が途絶えてしまう…"</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">応募はあっても、日程調整の段階で無視される。面接設定率が上がらず採用が進まない。</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-icon bg-purple-50">
+            <i class="fa-solid fa-money-bill-wave text-purple-500 text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">"採用に幾らかかるか怖くて踏み出せない…"</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">人材紹介は成功報酬で高額になりがち。月額固定で予算管理したいが選択肢が見つからない。</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-icon bg-green-50">
+            <i class="fa-solid fa-magnifying-glass text-green-500 text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">"営業の採用って何が違うの…？"</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">営業職は母集団形成が難しく、他職種と同じやり方では通用しない。専門的なノウハウが必要。</p>
+        </div>
+
+      </div>
+
+      <div class="text-center">
+        <div class="inline-flex flex-col items-center gap-3 text-primary font-bold">
+          <p class="text-lg">これらすべての課題を<br class="sm:hidden">ショキゼロが解決します</p>
+          <i class="fa-solid fa-angles-down text-3xl text-accent animate-bounce"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SERVICE SECTION
+  ======================================== -->
+  <section id="service" class="py-10 lg:py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <span class="section-label text-primary">SERVICE</span>
+        <h2 class="section-title mt-3">ショキゼロとは</h2>
+        <p class="section-subtitle">営業職採用に特化した月額定額制の採用代行サービス</p>
+      </div>
+
+      <!-- Service Overview Card -->
+      <div class="service-overview-card mb-8">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div>
+            <div class="inline-block bg-accent/10 text-accent font-bold text-sm px-4 py-2 rounded-full mb-4">
+              初期費用0円・最短即日スタート
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-black text-navy mb-4 leading-tight">
+              貴社の採用を、<br>
+              <span class="text-primary">定額でフルサポート。</span>
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              手を動かさずとも応募が積み上がり、理想の人材獲得へ直結します。専任人事がいない中小・ベンチャー企業に代わり、求人票の作成から媒体運用・スカウト送付・応募者対応まで、採用業務をまるごとお引き受けします。
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-primary mt-0.5 text-lg flex-shrink-0"></i>
+                <span class="text-sm text-gray-700"><strong class="text-navy">求人票の作成から媒体選定までプロが最適化。</strong><br>ターゲット層からの「応募数」を最大3.2倍まで引き上げます。</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-primary mt-0.5 text-lg flex-shrink-0"></i>
+                <span class="text-sm text-gray-700"><strong class="text-navy">月間最大15,000通の戦略的スカウト。</strong><br>1人あたりの「応募単価」を徹底して抑制し、採用効率を最適化します。</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-primary mt-0.5 text-lg flex-shrink-0"></i>
+                <span class="text-sm text-gray-700"><strong class="text-navy">リアルタイムでのデータ共有と定期報告。</strong><br>「なぜ獲れるのか」を可視化。数値に基づいた確実な採用戦略を共有します。</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-primary mt-0.5 text-lg flex-shrink-0"></i>
+                <span class="text-sm text-gray-700"><strong class="text-navy">完全オンライン完結のスマートな契約フロー。</strong><br>事務作業の「心理的負担」はゼロへ。即日スタートで機会損失を防ぎます。</span>
+              </li>
+            </ul>
+          </div>
+          <div class="relative">
+            <img
+              src="img/Grf.png"
+              alt="ショキゼロ導入による圧倒的成果"
+              class="rounded-2xl shadow-xl w-full"
+            />
+            <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg p-4 flex items-center gap-3">
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                <i class="fa-solid fa-chart-line text-primary text-xl"></i>
+              </div>
+              <div>
+                <div class="text-xs text-gray-500">求人媒体特化</div>
+                <div class="font-bold text-gray-800 text-sm">営業カテゴリ専門運用</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What we cover -->
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 lg:p-12 border border-blue-100">
+        <div class="text-center mb-8">
+          <p class="text-accent font-bold text-sm mb-2">COVERAGE</p>
+          <h3 class="text-xl sm:text-2xl font-black text-navy mb-3">
+            面接以外の「面倒なこと」は、<br class="sm:hidden">すべてショキゼロが引き受けます。
+          </h3>
+          <p class="text-gray-500 text-sm">
+            <i class="fa-solid fa-list-check text-primary mr-1"></i>代行範囲一覧
+          </p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="coverage-item">
+            <div class="coverage-icon"><i class="fa-solid fa-pen-to-square text-primary"></i></div>
+            <span>求人票作成・改善</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-icon"><i class="fa-solid fa-bullseye text-primary"></i></div>
+            <span>媒体選定・入札設定</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-icon"><i class="fa-solid fa-paper-plane text-primary"></i></div>
+            <span>スカウトメール代行</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-icon"><i class="fa-solid fa-comments text-primary"></i></div>
+            <span>応募者対応・日程調整</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-icon"><i class="fa-solid fa-chart-bar text-primary"></i></div>
+            <span>数値レポート（週次/月次）</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-icon"><i class="fa-solid fa-lightbulb text-primary"></i></div>
+            <span>採用戦略設計・ペルソナ設定</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       STRENGTHS SECTION
+  ======================================== -->
+  <section id="strengths" class="py-10 lg:py-14 strengths-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <span class="section-label text-white/70">STRENGTHS</span>
+        <h2 class="section-title text-white mt-3">ショキゼロ 3つの強み</h2>
+        <p class="text-blue-200 text-base sm:text-lg max-w-2xl mx-auto">「営業職採用の専門家」だからこそ実現できること</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Strength 01 -->
+        <div class="strength-card">
+          <div class="strength-number">01</div>
+          <div class="strength-icon-wrap">
+            <i class="fa-solid fa-chart-line text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-black text-navy mb-3">求人媒体営業カテゴリ特化の<br>アルゴリズム運用</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            求人媒体営業カテゴリのアルゴリズムを深く理解し、正しい入札設定・予算配分・掲載タイミングで求人を上位表示。「表示されない・応募が来ない」を根本から解決します。
+          </p>
+          <ul class="strength-list">
+            <li><i class="fa-solid fa-check text-primary"></i> 入札・予算の最適化</li>
+            <li><i class="fa-solid fa-check text-primary"></i> 掲載タイミングの自動調整</li>
+            <li><i class="fa-solid fa-check text-primary"></i> A/Bテストで継続改善</li>
+          </ul>
+        </div>
+
+        <!-- Strength 02 -->
+        <div class="strength-card strength-card-featured">
+          <div class="featured-badge">最も人気</div>
+          <div class="strength-number text-accent">02</div>
+          <div class="strength-icon-wrap">
+            <i class="fa-solid fa-file-pen text-3xl text-accent"></i>
+          </div>
+          <h3 class="text-xl font-black text-navy mb-3">営業職に刺さる求人票・<br>スカウト文の作成代行</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            業種・フェーズ・ターゲット層ごとに最適化した求人票とスカウト文を作成。業種横断の採用実績データをもとに「この媒体・この文面が効く」という勝ちパターンを適用します。
+          </p>
+          <ul class="strength-list">
+            <li><i class="fa-solid fa-check text-accent"></i> ペルソナ設計から一貫対応</li>
+            <li><i class="fa-solid fa-check text-accent"></i> スカウト月最大15,000通</li>
+            <li><i class="fa-solid fa-check text-accent"></i> 業種別の勝ちパターン適用</li>
+          </ul>
+        </div>
+
+        <!-- Strength 03 -->
+        <div class="strength-card">
+          <div class="strength-number">03</div>
+          <div class="strength-icon-wrap">
+            <i class="fa-solid fa-bolt text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-black text-navy mb-3">完全オンライン・<br>スピード導入</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            クラウドサイン等を活用した完全オンライン契約で、手続きの煩雑さをゼロに。問い合わせから最短即日で運用をスタートできます。
+          </p>
+          <ul class="strength-list">
+            <li><i class="fa-solid fa-check text-primary"></i> 最短即日スタート可能</li>
+            <li><i class="fa-solid fa-check text-primary"></i> クラウドサイン電子契約</li>
+            <li><i class="fa-solid fa-check text-primary"></i> 来社不要・完全オンライン</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- vs Competitor banner -->
+      <div class="mt-10 vs-banner">
+        <div class="grid sm:grid-cols-3 gap-6 text-center">
+          <div>
+            <div class="text-2xl font-black text-white mb-1">一般採用代行</div>
+            <div class="text-blue-200 text-sm">「量」と「工数削減」で勝負</div>
+          </div>
+          <div class="flex items-center justify-center">
+            <div class="vs-divider">VS</div>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-yellow mb-1">ショキゼロ</div>
+            <div class="text-blue-100 text-sm font-bold">「営業職採用の専門家」として勝負</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       PRICING SECTION
+  ======================================== -->
+  <section id="pricing" class="py-10 lg:py-14 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <span class="section-label text-primary">PRICING</span>
+        <h2 class="section-title mt-3">料金プラン</h2>
+        <p class="section-subtitle">初期費用0円。でも手を抜かずにお届けします。<br>自信があるから、ワンプランで提供しています。</p>
+      </div>
+
+      <!-- Single Plan Card -->
+      <div class="pricing-card pricing-card-popular mx-auto max-w-lg">
+        <div class="popular-badge">ワンプラン</div>
+        <div class="pricing-card-header bg-gradient-to-br from-primary to-primary-dark">
+          <div class="text-sm font-bold text-blue-200 mb-1 uppercase tracking-widest">All-in-One Plan</div>
+          <div class="text-2xl font-black text-white mb-1">ショキゼロプラン</div>
+          <div class="flex items-end gap-1 justify-center mb-2">
+            <span class="text-5xl font-black text-yellow">¥30,000</span>
+            <span class="text-blue-200 text-sm mb-1">（税抜）/ 初月</span>
+          </div>
+          <div class="text-sm text-blue-200">2ヶ月目以降 ¥100,000 / 月</div>
+        </div>
+        <div class="pricing-card-body">
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check text-primary"></i> 求人媒体運用（複数媒体対応）</li>
+            <li><i class="fa-solid fa-check text-primary"></i> 求人票作成・改善（複数パターン対応）</li>
+            <li><i class="fa-solid fa-check text-primary"></i> スカウト代行（月500〜15,000通）</li>
+            <li><i class="fa-solid fa-check text-primary"></i> 応募者対応・日程調整まで</li>
+            <li><i class="fa-solid fa-check text-primary"></i> 週次レポート + 月次レポート</li>
+            <li><i class="fa-solid fa-check text-primary"></i> 採用戦略設計・ペルソナ設定</li>
+            <li><i class="fa-solid fa-check text-primary"></i> 初月のみ最低契約・柔軟に対応</li>
+          </ul>
+          <a href="#contact" class="btn-accent w-full block text-center py-3 rounded-xl font-bold mt-6">
+            まずは無料で相談する
+          </a>
+        </div>
+      </div>
+
+      <!-- Notes -->
+      <div class="mt-8">
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5 text-sm text-gray-600 space-y-2">
+          <p class="flex items-start gap-2"><i class="fa-solid fa-info-circle text-primary mt-0.5"></i><span>初期費用は<strong class="text-navy">0円</strong>です。追加の設定費・登録費はかかりません。</span></p>
+          <p class="flex items-start gap-2"><i class="fa-solid fa-info-circle text-primary mt-0.5"></i><span>初月のみの最低契約期間。2ヶ月目以降は3ヶ月単位での更新となります。</span></p>
+          <p class="flex items-start gap-2"><i class="fa-solid fa-info-circle text-primary mt-0.5"></i><span>掲載費・スカウト費などの媒体費用は別途ご負担いただきます。詳細はお問い合わせください。</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       FLOW SECTION
+  ======================================== -->
+  <section id="flow" class="py-10 lg:py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <span class="section-label text-primary">FLOW</span>
+        <h2 class="section-title mt-3">導入までの流れ</h2>
+        <p class="section-subtitle">問い合わせから最短即日。シンプルなプロセスで採用をスタート。</p>
+      </div>
+
+      <div class="flow-container">
+        <div class="flow-step">
+          <div class="flow-icon-wrap bg-blue-50">
+            <i class="fa-solid fa-envelope-open-text text-primary text-xl"></i>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step-num">STEP 1</div>
+          <h3 class="flow-step-title">お問い合わせ</h3>
+          <p class="flow-step-desc">フォームから気軽にご連絡ください。</p>
+          <div class="flow-tag">最短当日</div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-icon-wrap bg-indigo-50">
+            <i class="fa-solid fa-video text-indigo-500 text-xl"></i>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step-num">STEP 2</div>
+          <h3 class="flow-step-title">オンラインMTG</h3>
+          <p class="flow-step-desc">ペルソナ設計・媒体選定・KPI合意。</p>
+          <div class="flow-tag">約60分</div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-icon-wrap bg-green-50">
+            <i class="fa-solid fa-file-signature text-green-500 text-xl"></i>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step-num">STEP 3</div>
+          <h3 class="flow-step-title">契約締結</h3>
+          <p class="flow-step-desc">クラウドサインで電子契約。来社不要。</p>
+          <div class="flow-tag">オンライン完結</div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-icon-wrap bg-orange-50">
+            <i class="fa-solid fa-handshake text-orange-500 text-xl"></i>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step-num">STEP 4</div>
+          <h3 class="flow-step-title">KICKOFF MTG</h3>
+          <p class="flow-step-desc">求人票・スカウト文の準備と詳細すり合わせ。</p>
+          <div class="flow-tag">3〜5営業日</div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-icon-wrap bg-primary/10">
+            <i class="fa-solid fa-rocket text-primary text-xl"></i>
+          </div>
+          <div class="flow-step-num">STEP 5</div>
+          <h3 class="flow-step-title">運用開始</h3>
+          <p class="flow-step-desc">求人掲載・スカウト送信がスタート。</p>
+          <div class="flow-tag flow-tag-start">採用スタート！</div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <div class="inline-flex items-center gap-3 bg-accent/10 border border-accent/30 rounded-2xl px-8 py-4">
+          <i class="fa-solid fa-bolt text-accent text-2xl"></i>
+          <div class="text-left">
+            <div class="font-black text-accent text-lg">最短即日スタート可能</div>
+            <div class="text-sm text-gray-600">問い合わせ → MTG → 契約 → 運用開始 まで最速対応</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       CTA BANNER
+  ======================================== -->
+  <section class="py-10 lg:py-12 cta-banner-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h2 class="text-3xl sm:text-4xl font-black mb-4">
+        まずは無料相談から<br>
+        <span class="text-yellow">始めてみませんか？</span>
+      </h2>
+      <p class="text-blue-100 text-lg mb-8">初期費用0円・初月3万円。採用の悩みをプロに相談するだけでOK。</p>
+      <a href="#contact" class="btn-accent inline-flex items-center gap-3 px-10 py-5 rounded-full text-lg font-black shadow-2xl hover:scale-105 transition-transform">
+        <i class="fa-solid fa-envelope text-xl"></i>
+        今すぐ無料相談する
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       CONTACT FORM
+       Netlify standard form submission:
+       - name="contact" + data-netlify="true" → Netlify detects & processes
+       - action="thankyou.html" → redirect after successful POST
+       - method="POST" → standard form POST
+       - hidden form-name input → required for Netlify SPA/JS sites
+       - bot-field honeypot → spam protection
+       NO JavaScript intercepts this form. It submits natively to Netlify.
+  ======================================== -->
+  <section id="contact" class="py-10 lg:py-14 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <span class="section-label text-primary">CONTACT</span>
+        <h2 class="section-title mt-3 text-3xl font-extrabold text-slate-900">お問い合わせ</h2>
+        <p class="section-subtitle mt-4 text-slate-600">まずはお気軽にご相談ください。2営業日以内にご返信します。</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-10 border border-slate-100">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thankyou.html" class="space-y-5">
+          <!-- Netlify hidden fields (REQUIRED) -->
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+          <div class="form-group">
+            <label for="company" class="block text-sm font-bold text-slate-700 mb-2">
+              貴社名 <span class="text-red-500 ml-1">必須</span>
+            </label>
+            <input type="text" id="company" name="company" placeholder="株式会社〇〇" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-4 focus:ring-primary/10 focus:border-primary outline-none transition-all" required />
+          </div>
+
+          <div class="form-group">
+            <label for="name" class="block text-sm font-bold text-slate-700 mb-2">
+              担当者名 <span class="text-red-500 ml-1">必須</span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="山田 太郎" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-4 focus:ring-primary/10 focus:border-primary outline-none transition-all" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="block text-sm font-bold text-slate-700 mb-2">
+              メールアドレス <span class="text-red-500 ml-1">必須</span>
+            </label>
+            <input type="email" id="email" name="email" placeholder="example@company.co.jp" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-4 focus:ring-primary/10 focus:border-primary outline-none transition-all" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="block text-sm font-bold text-slate-700 mb-2">
+              電話番号 <span class="text-red-500 ml-1">必須</span>
+            </label>
+            <input type="tel" id="phone" name="phone" placeholder="03-0000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-4 focus:ring-primary/10 focus:border-primary outline-none transition-all" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="block text-sm font-bold text-slate-700 mb-2">
+              お問い合わせ内容 <span class="text-red-500 ml-1">必須</span>
+            </label>
+            <textarea id="message" name="message" rows="5" placeholder="ご質問・ご相談内容をご記入ください。例）現在営業職を3名採用したい。採用代行の実績を聞きたい。" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-4 focus:ring-primary/10 focus:border-primary outline-none transition-all resize-none" required></textarea>
+          </div>
+
+          <div class="flex items-start gap-3 mb-4">
+            <input type="checkbox" id="privacy" name="privacy" class="mt-1 w-4 h-4 accent-primary" required />
+            <label for="privacy" class="text-sm text-gray-600 leading-relaxed">
+              <a href="#" class="text-primary underline hover:text-blue-700">プライバシーポリシー</a>に同意する
+            </label>
+          </div>
+
+          <button type="submit" class="w-full py-4 bg-primary hover:bg-blue-700 text-white font-black rounded-xl shadow-lg shadow-primary/20 transition-all hover:scale-[1.01] flex items-center justify-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i>
+            送信する（無料）
+          </button>
+        </form>
+
+        <div class="mt-8 pt-8 border-t border-gray-100 flex flex-col sm:flex-row gap-6 justify-center text-sm text-gray-500">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope text-primary"></i>
+            <span>info@shoki-zero.com</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-clock text-primary"></i>
+            <span>平日 10:00〜18:00（2営業日以内に返信）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       FOOTER
+  ======================================== -->
+  <footer class="bg-navy text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div class="lg:col-span-2">
+          <div class="text-2xl font-black mb-2">ショキ<span class="text-accent">ゼロ</span></div>
+          <p class="text-blue-200 text-sm leading-relaxed mb-4">営業職採用に特化した、月額定額制の採用代行サービス。<br>初期費用0円・初月3万円から、即日スタート可能。</p>
+          <div class="text-blue-300 text-xs">運営：Happs &amp; Partners株式会社</div>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-blue-200 text-sm uppercase tracking-wide">サービス</h4>
+          <ul class="space-y-2 text-sm text-blue-300">
+            <li><a href="#service"   class="hover:text-white transition-colors">サービス概要</a></li>
+            <li><a href="#strengths" class="hover:text-white transition-colors">3つの強み</a></li>
+            <li><a href="#pricing"   class="hover:text-white transition-colors">料金プラン</a></li>
+            <li><a href="#flow"      class="hover:text-white transition-colors">導入の流れ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-blue-200 text-sm uppercase tracking-wide">お問い合わせ</h4>
+          <ul class="space-y-2 text-sm text-blue-300">
+            <li><a href="#contact" class="hover:text-white transition-colors">無料相談フォーム</a></li>
+            <li><a href="mailto:info@shoki-zero.com" class="hover:text-white transition-colors">info@shoki-zero.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-blue-900/60 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-blue-400">
+        <p>&copy; 2024 Happs &amp; Partners株式会社. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a>
+          <a href="#" class="hover:text-white transition-colors">利用規約</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-primary-dark z-50">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

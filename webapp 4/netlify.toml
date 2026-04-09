@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[dev]
+  publish = "."
+  port = 3000
+  autoLaunch = false
+
+# Form notification — send submissions to info@shoki-zero.com
+# Configure in Netlify dashboard: Site settings > Forms > Form notifications
+# Add email notification to: info@shoki-zero.com

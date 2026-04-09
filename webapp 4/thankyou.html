@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>送信完了 | ショキゼロ</title>
+  <meta name="robots" content="noindex,nofollow" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1458706989077421');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1458706989077421&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#1A5FBF', light: '#2D7DD2', dark: '#134A99' },
+            accent:  { DEFAULT: '#F97316', light: '#FB923C', dark: '#EA6A0A' },
+            yellow:  { DEFAULT: '#FACC15', light: '#FDE68A' },
+            navy:    { DEFAULT: '#0F2A5E' },
+          },
+          fontFamily: { sans: ['"Noto Sans JP"', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; }
+    .thankyou-person { max-height: 320px; filter: drop-shadow(0 8px 24px rgba(0,0,0,.15)); }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .anim-fade { animation: fadeInUp .6s ease forwards; }
+    .anim-d2 { animation-delay: .2s; opacity: 0; }
+    .anim-d4 { animation-delay: .4s; opacity: 0; }
+    .anim-d6 { animation-delay: .6s; opacity: 0; }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white/95 backdrop-blur-sm shadow-sm py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="text-primary font-black text-2xl tracking-tight">ショキ<span class="text-accent">ゼロ</span></span>
+      </a>
+      <a href="index.html" class="text-sm text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+        <i class="fa-solid fa-arrow-left"></i> トップページへ戻る
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex items-center justify-center py-12 px-4">
+    <div class="max-w-2xl w-full text-center">
+
+      <div class="mb-8 anim-fade">
+        <img src="img/rikakoookawa.png" alt="ショキゼロ コンシェルジュ" class="thankyou-person mx-auto" />
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-10 border border-slate-100 anim-fade anim-d2">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="fa-solid fa-check text-green-500 text-3xl"></i>
+        </div>
+
+        <h1 class="text-2xl sm:text-3xl font-black text-navy mb-4">申し込みありがとうございました</h1>
+        <p class="text-gray-600 text-base leading-relaxed mb-8">2営業日以内にご返信が届きます。<br>しばらくお待ちくださいませ。</p>
+
+        <!-- Download Links -->
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 border border-blue-100 mb-6 anim-fade anim-d4">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <i class="fa-solid fa-download text-primary text-lg"></i>
+            <h2 class="text-lg font-bold text-navy">資料ダウンロードはこちらから</h2>
+          </div>
+          <div class="space-y-3">
+            <a href="https://docs.google.com/presentation/d/1n-BW8DRdwciHHf33Fu5096xv3H0HkUOY/edit?slide=id.g3dcbe5da471_0_291#slide=id.g3dcbe5da471_0_291" target="_blank" rel="noopener noreferrer"
+               class="flex items-center gap-3 bg-white hover:bg-blue-50 border border-blue-200 rounded-xl px-5 py-4 transition-all hover:shadow-md group">
+              <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-file-lines text-primary"></i>
+              </div>
+              <div class="text-left flex-1 min-w-0">
+                <div class="text-sm font-bold text-navy group-hover:text-primary transition-colors">資料ダウンロード</div>
+                <div class="text-xs text-gray-500 truncate">docs.google.com/presentation/...</div>
+              </div>
+              <i class="fa-solid fa-external-link-alt text-gray-400 group-hover:text-primary transition-colors flex-shrink-0"></i>
+            </a>
+            <a href="https://timerex.net/s/ren_7a92_a043/812e2a31/" target="_blank" rel="noopener noreferrer"
+               class="flex items-center gap-3 bg-white hover:bg-blue-50 border border-blue-200 rounded-xl px-5 py-4 transition-all hover:shadow-md group">
+              <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-calendar-check text-accent"></i>
+              </div>
+              <div class="text-left flex-1 min-w-0">
+                <div class="text-sm font-bold text-navy group-hover:text-accent transition-colors">面談予約はこちら</div>
+                <div class="text-xs text-gray-500 truncate">timerex.net/s/ren_7a92_a043/...</div>
+              </div>
+              <i class="fa-solid fa-external-link-alt text-gray-400 group-hover:text-accent transition-colors flex-shrink-0"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="anim-fade anim-d6">
+          <a href="index.html" class="inline-flex items-center gap-2 bg-primary hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-primary/20 transition-all hover:scale-[1.02]">
+            <i class="fa-solid fa-home"></i> トップページへ戻る
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="text-lg font-black mb-2">ショキ<span class="text-accent">ゼロ</span></div>
+      <p class="text-blue-300 text-xs">&copy; 2024 Happs &amp; Partners株式会社. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
