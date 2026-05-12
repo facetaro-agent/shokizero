@@ -444,6 +444,107 @@ body { font-family: 'Noto Sans JP', sans-serif; overflow-x: hidden; }
 }
 
 /* ========================================
+   TESTIMONIALS / 導入実績セクション
+======================================== */
+.testimonial-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+  border: 1px solid #f1f5f9;
+  transition: transform .3s ease, box-shadow .3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+.testimonial-card-featured {
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 20px rgba(249,115,22,.12);
+}
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.testimonial-icon {
+  width: 48px; height: 48px;
+  border-radius: .75rem;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.testimonial-quote {
+  position: relative;
+  background: #f8fafc;
+  border-radius: 1rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+.testimonial-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem 1rem;
+  background: #f0f9ff;
+  border-radius: .75rem;
+}
+
+/* ========================================
+   FREE TRIAL / 無料トライアルセクション
+======================================== */
+.free-trial-bg {
+  background: linear-gradient(135deg, #F97316 0%, #EA6A0A 40%, #FB923C 100%);
+}
+.free-trial-card {
+  background: #fff;
+  border-radius: 2rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 16px 48px rgba(0,0,0,.15);
+}
+@media (min-width: 640px) {
+  .free-trial-card { padding: 3rem 2.5rem; }
+}
+.free-trial-price-card {
+  background: #fff7ed;
+  border: 2px solid #fed7aa;
+  border-radius: 1.25rem;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: transform .3s ease;
+}
+.free-trial-price-card:hover { transform: translateY(-2px); }
+.free-trial-price-card-after {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+.free-trial-slots {
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  border: 2px dashed var(--accent);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+}
+.free-trial-slots-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 900;
+  padding: .35rem 1.25rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(220,38,38,.3);
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+@keyframes pulse-badge {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+
+/* ========================================
    CTA BANNER
 ======================================== */
 .cta-banner-bg {
